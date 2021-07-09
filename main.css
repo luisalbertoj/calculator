@@ -1,0 +1,47 @@
+.main-container {
+  width: 60%;
+  margin: 10% auto;
+  padding: 20px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.result {
+  text-align: right;
+  padding: 1em;
+  border-radius: 15px;
+  box-shadow: inset 0 -3em 3em rgba(98, 245, 41, 0.1),
+    0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  margin-bottom: 2%;
+}
+
+.result:hover {
+  border: none;
+  box-shadow: inset 0 -3em 3em rgba(5, 230, 16, 0.247),
+    0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(31, 199, 54, 0.3);
+}
+.btnCal {
+  background: #dadce0;
+  color: #202124;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 1em;
+}
+.btnCal:hover {
+  background: #0d55e6;
+  color: white;
+  box-shadow: 0 -2em 2em #dadce0;
+  -webkit-animation: tiembla 0.8s infinite;
+  cursor: pointer;
+}
+@-webkit-keyframes tiembla {
+  0% {
+    -webkit-transform: rotateZ(-2deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(0deg) scale(0.8);
+  }
+  100% {
+    -webkit-transform: rotateZ(2deg);
+  }
+}
